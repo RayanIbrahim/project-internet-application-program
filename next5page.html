@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> factorialfuntion </title>
+    <style> 
+    button{
+        width: 50px;
+        height: 20px;
+    }
+    </style>
+</head>
+<body bgcolor="orange">
+   
+    number  <input type="number" id="number" placeholder="enter intger number" > 
+    <br>
+    <button id= "Thee" onlclick= "TheeClick() " > Fac</button>
+    <script lang="javascript">
+        function factorial(num){
+        let answer = 1;
+        if(num==0||num==1){
+        return answer;}
+        else{
+            for(var i=num;i>=1;i--){
+                answer=answer*i;
+            }
+        }
+        }
+function TheeClick(){
+    var MValue = document.getElementById("number").value; 
+    var mvalue  = factorial(MValue); 
+   alert("mvalue");
+    }
+    
+
+    </script>
+</body>
+</html>
